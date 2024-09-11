@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import Logout from '../examples/Logout';
+import { IoIosLogOut } from 'react-icons/io';
 
 export default function Navbar() {
     const [time, setTime] = useState(Date.now())
@@ -23,7 +25,7 @@ export default function Navbar() {
                             <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                         </li>
                         <li class="nav-item d-none d-sm-inline-block">
-                            <Link to={'/'} onClick={refreshPage}  class="nav-link">Home</Link>
+                            <Link to={'/'} onClick={refreshPage} class="nav-link">Home</Link>
                         </li>
                         <li class="nav-item d-none d-sm-inline-block">
                             <a href="#" class="nav-link">Contact</a>
@@ -158,7 +160,7 @@ export default function Navbar() {
                 {/* <!-- Main Sidebar Container --> */}
                 <aside class="main-sidebar sidebar-dark-primary elevation-4">
                     {/* <!-- Brand Logo --> */}
-                    <Link to={'/'} onClick={refreshPage}  class="brand-link">
+                    <Link to={'/'} onClick={refreshPage} class="brand-link">
                         <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style={{ opacity: ".8" }} />
                         <span class="brand-text font-weight-light">ADWAAR</span>
                     </Link>
@@ -203,7 +205,7 @@ export default function Navbar() {
                                     <ul class="nav nav-treeview">
                                         {/* <!--  --> */}
                                         <li class="nav-item">
-                                            <Link to={'/'} onClick={refreshPage}  class="nav-link">
+                                            <Link to={'/'} onClick={refreshPage} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Dashboard v3</p>
                                             </Link>
@@ -812,6 +814,12 @@ export default function Navbar() {
                                         <p>Informational</p>
                                     </a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">
+                                        <IoIosLogOut style={{ color: "white", fontSize: "20px", marginLeft: '5px' }} />
+                                        <p style={{ marginLeft: '6px', cursor: 'pointer' }}><Logout /></p>
+                                    </a>
+                                </li>
                             </ul>
                         </nav>
                         {/* <!-- /.sidebar-menu --> */}
@@ -864,7 +872,7 @@ export default function Navbar() {
                                                                 <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                                                             </li>
                                                             <li class="nav-item d-none d-sm-inline-block">
-                                                                <Link to={'/'} onClick={refreshPage}  class="nav-link">Home</Link>
+                                                                <Link to={'/'} onClick={refreshPage} class="nav-link">Home</Link>
                                                             </li>
                                                             <li class="nav-item d-none d-sm-inline-block">
                                                                 <a href="#" class="nav-link">Contact</a>
@@ -1004,7 +1012,7 @@ export default function Navbar() {
                                                                 <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                                                             </li>
                                                             <li class="nav-item d-none d-sm-inline-block">
-                                                                <Link to={'/'} onClick={refreshPage}  class="nav-link">Home</Link>
+                                                                <Link to={'/'} onClick={refreshPage} class="nav-link">Home</Link>
                                                             </li>
                                                             <li class="nav-item d-none d-sm-inline-block">
                                                                 <a href="#" class="nav-link">Contact</a>
@@ -1146,7 +1154,7 @@ export default function Navbar() {
                                                                 <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                                                             </li>
                                                             <li class="nav-item d-none d-sm-inline-block">
-                                                                <Link to={'/'} onClick={refreshPage}  class="nav-link">Home</Link>
+                                                                <Link to={'/'} onClick={refreshPage} class="nav-link">Home</Link>
                                                             </li>
                                                             <li class="nav-item d-none d-sm-inline-block">
                                                                 <a href="#" class="nav-link">Contact</a>
@@ -1286,7 +1294,7 @@ export default function Navbar() {
                                                                 <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                                                             </li>
                                                             <li class="nav-item d-none d-sm-inline-block">
-                                                                <Link to={'/'} onClick={refreshPage}  class="nav-link">Home</Link>
+                                                                <Link to={'/'} onClick={refreshPage} class="nav-link">Home</Link>
                                                             </li>
                                                             <li class="nav-item d-none d-sm-inline-block">
                                                                 <a href="#" class="nav-link">Contact</a>
@@ -1428,7 +1436,7 @@ export default function Navbar() {
                                                                 <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                                                             </li>
                                                             <li class="nav-item d-none d-sm-inline-block">
-                                                                <Link to={'/'} onClick={refreshPage}  class="nav-link">Home</Link>
+                                                                <Link to={'/'} onClick={refreshPage} class="nav-link">Home</Link>
                                                             </li>
                                                             <li class="nav-item d-none d-sm-inline-block">
                                                                 <a href="#" class="nav-link">Contact</a>
@@ -1568,7 +1576,7 @@ export default function Navbar() {
                                                                 <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                                                             </li>
                                                             <li class="nav-item d-none d-sm-inline-block">
-                                                                <Link to={'/'} onClick={refreshPage}  class="nav-link">Home</Link>
+                                                                <Link to={'/'} onClick={refreshPage} class="nav-link">Home</Link>
                                                             </li>
                                                             <li class="nav-item d-none d-sm-inline-block">
                                                                 <a href="#" class="nav-link">Contact</a>

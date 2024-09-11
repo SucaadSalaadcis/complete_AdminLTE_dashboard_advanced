@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import RefreshPage from '../../src/RefreshPage'
+import { IoIosLogOut } from 'react-icons/io'
+import Logout from './Logout'
 
 export default function Profile() {
     return (
@@ -14,7 +16,7 @@ export default function Profile() {
                             <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                         </li>
                         <li class="nav-item d-none d-sm-inline-block">
-                            <Link to={'/'} onClick={RefreshPage}  class="nav-link">Home</Link>
+                            <Link to={'/'} onClick={RefreshPage} class="nav-link">Home</Link>
                         </li>
                         <li class="nav-item d-none d-sm-inline-block">
                             <a href="#" class="nav-link">Contact</a>
@@ -147,7 +149,7 @@ export default function Profile() {
                 {/* <!-- Main Sidebar Container --> */}
                 <aside class="main-sidebar sidebar-dark-primary elevation-4">
                     {/* <!-- Brand Logo --> */}
-                    <Link to={'/'} onClick={RefreshPage}  class="brand-link">
+                    <Link to={'/'} onClick={RefreshPage} class="brand-link">
                         <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style={{ opacity: ".8" }} />
                         <span class="brand-text font-weight-light">ADWAAR</span>
                     </Link>
@@ -192,7 +194,7 @@ export default function Profile() {
                                     <ul class="nav nav-treeview">
                                         {/* <!--  --> */}
                                         <li class="nav-item">
-                                            <Link to={'/'} onClick={RefreshPage}  class="nav-link">
+                                            <Link to={'/'} onClick={RefreshPage} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Dashboard v3</p>
                                             </Link>
@@ -331,7 +333,7 @@ export default function Profile() {
                                             </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <Link to={'/ui/sliders'}  class="nav-link">
+                                            <Link to={'/ui/sliders'} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Sliders</p>
                                             </Link>
@@ -799,6 +801,12 @@ export default function Profile() {
                                     <a href="#" class="nav-link">
                                         <i class="nav-icon far fa-circle text-info"></i>
                                         <p>Informational</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">
+                                        <IoIosLogOut style={{ color: "white", fontSize: "20px", marginLeft: '5px' }} />
+                                        <p style={{ marginLeft: '6px', cursor: 'pointer' }}><Logout /></p>
                                     </a>
                                 </li>
                             </ul>

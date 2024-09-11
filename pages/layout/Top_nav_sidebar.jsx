@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import RefreshPage from '../../src/RefreshPage'
+import { IoIosLogOut } from 'react-icons/io'
+import Logout from '../examples/Logout'
 
 export default function Top_nav_sidebar() {
     return (
@@ -10,7 +12,7 @@ export default function Top_nav_sidebar() {
                 {/* <!-- Navbar --> */}
                 <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
                     <div class="container">
-                        <Link to={'/'} onClick={RefreshPage}  class="navbar-brand">
+                        <Link to={'/'} onClick={RefreshPage} class="navbar-brand">
                             <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style={{ opacity: ".8" }} />
                             <span class="brand-text font-weight-light">ADWAAR</span>
                         </Link>
@@ -179,7 +181,7 @@ export default function Top_nav_sidebar() {
                 {/* <!-- Main Sidebar Container --> */}
                 <aside class="main-sidebar sidebar-dark-primary elevation-4">
                     {/* <!-- Brand Logo --> */}
-                    <Link to={'/'} onClick={RefreshPage}  class="brand-link">
+                    <Link to={'/'} onClick={RefreshPage} class="brand-link">
                         <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style={{ opacity: ".8" }} />
                         <span class="brand-text font-weight-light">ADWAAR</span>
                     </Link>
@@ -235,7 +237,7 @@ export default function Top_nav_sidebar() {
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <Link to={'/'} onClick={RefreshPage}  class="nav-link">
+                                            <Link to={'/'} onClick={RefreshPage} class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
                                                 <p>Dashboard v3</p>
                                             </Link>
@@ -842,6 +844,12 @@ export default function Top_nav_sidebar() {
                                     <a href="#" class="nav-link">
                                         <i class="nav-icon far fa-circle text-info"></i>
                                         <p>Informational</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">
+                                        <IoIosLogOut style={{ color: "white", fontSize: "20px", marginLeft: '5px' }} />
+                                        <p style={{ marginLeft: '6px', cursor: 'pointer' }}><Logout /></p>
                                     </a>
                                 </li>
                             </ul>

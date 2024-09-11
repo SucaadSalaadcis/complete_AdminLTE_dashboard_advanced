@@ -1,5 +1,7 @@
 import React from 'react'
+import { IoIosLogOut } from 'react-icons/io'
 import { Link } from 'react-router-dom'
+import Logout from './pages/examples/Logout'
 
 export default function Iframe() {
 
@@ -719,6 +721,12 @@ export default function Iframe() {
                                     <a href="#" class="nav-link">
                                         <i class="nav-icon far fa-circle text-info"></i>
                                         <p>Informational</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">
+                                        <IoIosLogOut style={{ color: "white", fontSize: "20px", marginLeft: '5px' }} />
+                                        <p style={{ marginLeft: '6px', cursor: 'pointer' }}><Logout /></p>
                                     </a>
                                 </li>
                             </ul>
